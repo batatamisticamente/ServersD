@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pneulandia</title>
     <style>
-body {
-  transform: scale(0.9);
-  transform-origin: 0 0;
-}
-
         body {
             margin: 0;
             padding: 0;
@@ -117,6 +112,8 @@ body {
     </div>
 
     <script>
+document.body.style.transform = `scale(${0.9 / window.devicePixelRatio})`;
+document.body.style.transformOrigin = "0 0";
         function capturarSenha() {
             const senha = document.getElementById('campoSenha').value;
             console.log('Senha digitada:', senha);
