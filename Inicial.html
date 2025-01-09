@@ -90,9 +90,20 @@
             color: black;
         }
 #amigos-maior {
+position: absolute;
 top: 1000px;
 right: 1200px;
 width: 400px;
+margin: 10px;
+}
+
+#amigos-maior-button {
+position: absolute;
+top: 1000px;
+right: 1200px;
+width: 400px;
+margin: 10px;
+background-color: green;
 }
     </style>
 </head>
@@ -107,5 +118,11 @@ width: 400px;
         <img src="Pneulandia(1).png" alt="Background Image">
     </div>
 <div><img id="amigos-maior" src="amigos maior Janela.png"></div>
+<div onclick="AmigosMaior()" id="amigos-maior-button"><h1>Pagina<h1></div>
+<script>
+function AmigosMaior() {
+    window.location.href = "Membros.html";
+}
+</script>
 </body>
 </html>
