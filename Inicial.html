@@ -113,6 +113,30 @@ transition: transform 1s ease;
 #amigos-maior-button:hover {
 transform: scale(1.2)
 }
+#item-asylum {
+position: absolute;
+top: 1200px;
+right: 850px;
+width: 400px;
+margin: 10px;
+}
+
+#item-asylum-button {
+position: absolute;
+top: 1385px;
+right: 900px;
+width: 300px;
+margin: 10px;
+background-color: #8cff66;
+border-radius: 30px;
+text-align: center;
+border: 4px black solid;
+cursor: pointer;
+transition: transform 1s ease;
+}
+#item-asylum-button:hover {
+transform: scale(1.2)
+}
     </style>
 </head>
 <body>
@@ -129,6 +153,12 @@ transform: scale(1.2)
 <div onclick="AmigosMaior()" id="amigos-maior-button"><h1>Pagina<h1></div>
 <script>
 function AmigosMaior() {
+    window.location.href = "Membros.html";
+}
+<div><img id="item-asylum" src="amigos maior Janela.png"></div>
+<div onclick="ItemAsylum()" id="item-asylum-button"><h1>Pagina<h1></div>
+<script>
+function ItemAsylum() {
     window.location.href = "Membros.html";
 }
 </script>
