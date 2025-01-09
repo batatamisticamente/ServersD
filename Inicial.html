@@ -89,6 +89,10 @@
         #Senha2 h1 {
             color: black;
         }
+#amigos-maior {
+top: 1000px;
+right: 1200px;
+}
     </style>
 </head>
 <body>
@@ -101,28 +105,6 @@
     <div id="ImagenBack">
         <img src="Pneulandia(1).png" alt="Background Image">
     </div>
-
-    <div id="Senha">
-        <input type="password" id="campoSenha" placeholder="Digite sua senha">
-        <button onclick="capturarSenha()">Enviar</button>
-    </div>
-
-    <div id="Senha2">
-        <h1>Senha</h1>
-    </div>
-
-    <script>
-document.body.style.zoom = "0.9";
-        function capturarSenha() {
-            const senha = document.getElementById('campoSenha').value;
-            console.log('Senha digitada:', senha);
-            if (senha === 'pneu123') {
-                window.location.href = 'Membros.html';
-            } else {
-                document.querySelector("button").style.backgroundColor = 'red';
-            }
-        }
-    </script>
-
+<div><img id="amigos-maior" src="amigos maior Janela.png"></div>
 </body>
 </html>
