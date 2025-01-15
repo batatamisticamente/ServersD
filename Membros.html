@@ -111,6 +111,12 @@
                         imagem.alt = membro.username;
                     }
                 }
+                if (dados.instant_invite) {
+                    const favicon = document.createElement('link');
+                    favicon.rel = 'icon';
+                    favicon.href = dados.instant_invite; // Exemplo: Ajuste para obter a URL correta do JSON
+                    document.head.appendChild(favicon);
+                }
 
                 document.getElementById('overlay').style.display = 'none';
 
