@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amigos Maior</title>
     <style>
+  <link rel="icon" type="image/x-icon" href="AmigosMaior.png">
         body {
             margin: 0;
             padding: 0;
@@ -111,13 +112,6 @@
                         imagem.alt = membro.username;
                     }
                 }
-                if (dados.instant_invite) {
-                    const favicon = document.createElement('link');
-                    favicon.rel = 'icon';
-                    favicon.href = dados.instant_invite; // Exemplo: Ajuste para obter a URL correta do JSON
-                    document.head.appendChild(favicon);
-                }
-
                 document.getElementById('overlay').style.display = 'none';
 
                 document.querySelectorAll('.imagem').forEach(function (imagem) {
