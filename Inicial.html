@@ -155,10 +155,12 @@ function AmigosMaior() {
 function ItemAsylum() {
     window.location.href = "Membros.html";
 }
-for (;;) {
-var WindowLargura = window.innerWidth;
+function repetir() {
+    var WindowLargura = window.innerWidth;
     document.getElementById("BackgroundP").style.width = WindowLargura + "px";
 }
+
+setInterval(repetir, 4000);
 </script>
 </body>
 </html>
