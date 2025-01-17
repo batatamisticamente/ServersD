@@ -103,14 +103,21 @@ function ItemAsylum() {
 var opacity = parseFloat(document.getElementById("PneulandiaIcon").style.opacity) || 1;
 setInterval(() => {
 var vezes = 50;
-const interval = 100;
 
 const intervalId = setInterval(() => {
     vezes -= 1;
     opacity -= 0.02;
     document.getElementById("PneulandiaIcon").style.opacity = opacity
     if (vezes === 0) clearInterval(intervalId);
-}, interval);
+}, 100);
+var vezes = 50;
+
+const intervalId = setInterval(() => {
+    vezes -= 1;
+    opacity += 0.02;
+    document.getElementById("PneulandiaIcon").style.opacity = opacity
+    if (vezes === 0) clearInterval(intervalId);
+}, 100);
 }, 1000);
 </script>
 </body>
