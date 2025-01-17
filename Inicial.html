@@ -108,14 +108,14 @@ setInterval(() => {
     const intervalId = setInterval(() => {
         if (vezes === 0) {
             clearInterval(intervalId);
-            fadingOut = !fadingOut; // Alterna entre fade-in e fade-out
+            fadingOut = !fadingOut; // Alterna entre sumir e aparecer
         } else {
             opacity += fadingOut ? -0.02 : 0.02;
             document.getElementById("PneulandiaIcon").style.opacity = opacity;
             vezes--;
         }
     }, 100);
-}, 1000);
+}, 2000);
 </script>
 </body>
 </html>
