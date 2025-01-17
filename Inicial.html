@@ -101,7 +101,7 @@ function ItemAsylum() {
     window.location.href = "Membros.html";
 }
 var opacity = parseFloat(document.getElementById("PneulandiaIcon").style.opacity) || 1;
-while (true) {
+setInterval(() => {
 var vezes = 50;
 const interval = 100;
 
@@ -111,7 +111,7 @@ const intervalId = setInterval(() => {
     document.getElementById("PneulandiaIcon").style.opacity = opacity
     if (vezes === 0) clearInterval(intervalId);
 }, interval);
-}
+}, 0);
 </script>
 </body>
 </html>
