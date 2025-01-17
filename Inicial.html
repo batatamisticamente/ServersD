@@ -100,24 +100,21 @@ function AmigosMaior() {
 function ItemAsylum() {
     window.location.href = "Membros.html";
 }
-var opacity = parseFloat(document.getElementById("PneulandiaIcon").style.opacity) || 1;
+var opacity = 1;
+var fadingOut = true;
+
 setInterval(() => {
-var vezes = 50;
-
-const intervalId = setInterval(() => {
-    vezes -= 1;
-    opacity -= 0.02;
-    document.getElementById("PneulandiaIcon").style.opacity = opacity
-    if (vezes === 0) clearInterval(intervalId);
-}, 100);
-var vezes = 50;
-
-const intervalId = setInterval(() => {
-    vezes -= 1;
-    opacity += 0.02;
-    document.getElementById("PneulandiaIcon").style.opacity = opacity
-    if (vezes === 0) clearInterval(intervalId);
-}, 100);
+    let vezes = 50;
+    const intervalId = setInterval(() => {
+        if (vezes === 0) {
+            clearInterval(intervalId);
+            fadingOut = !fadingOut; // Alterna entre fade-in e fade-out
+        } else {
+            opacity += fadingOut ? -0.02 : 0.02;
+            document.getElementById("PneulandiaIcon").style.opacity = opacity;
+            vezes--;
+        }
+    }, 100);
 }, 1000);
 </script>
 </body>
